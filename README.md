@@ -24,10 +24,6 @@ Cinema example
         ServerName cinema_example.local.com
         ServerAlias www.cinema_example.local.com
 
-        DocumentRoot /home/cinema_example
-        CustomLog /home/cinema_example/log/com.silex_access_log common
-        ErrorLog /home/cinema_example/log/com.silex_error_log
-
         DocumentRoot "/home/cinema_example/web/"
 
         <Directory /home/cinema_example/web/>
