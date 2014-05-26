@@ -1,0 +1,64 @@
+{% extends "base.twig" %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block title %}Cinema example{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block main %}
+    <div class="column-left block">
+        <div class="block">
+            <h3>Get schedule</h3>
+            <form id="get_schedule_form" action="#">
+                <br>
+                {{ form_widget(get_schedule_form) }}
+                <br>
+                <input type="submit" name="submit" value="Get schedule"/>
+            </form>
+        </div>
+
+        <div class="block">
+            <h3>Get film seance</h3>
+            <form id="get_film_form" action="#">
+                <br>
+                {{ form_widget(get_film_form) }}
+                <br>
+                <input type="submit" name="submit" value="Get film seance"/>
+            </form>
+        </div>
+
+        <div class="block">
+            <h3>Get seance places</h3>
+            <form id="get_film_seance_form" action="#">
+                <br>
+                {{ form_widget(get_film_seance_form) }}
+                <br>
+                <input type="submit" name="submit" value="Get seance places"/>
+            </form>
+        </div>
+
+        <div class="block">
+            <h3>Reject ticket</h3>
+            <form id="reject_ticket_form" action="#">
+                <br>
+                {{ form_widget(reject_ticket_form) }}
+                <br>
+                <input type="submit" name="submit" value="Reject ticket"/>
+            </form>
+        </div>
+    </div>
+
+    <div class="column-center block">
+        <div id="response"></div>
+    </div>
+
+    <div class="column-right block">
+        <div id="orders"></div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

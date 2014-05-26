@@ -1,0 +1,29 @@
+{% spaceless %}
+    <!doctype html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <script src="/js/libs/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    {% endblock %}
+</head>
+
+<body>
+
+<div id="container">
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    <div id="main" role="main">
+        {% block main %}{% endblock %}
+    </div>
+    <footer>
+        {% block footer %}{% endblock %}
+    </footer>
+</div>
+
+</body>
+</html>
+{% endspaceless %}

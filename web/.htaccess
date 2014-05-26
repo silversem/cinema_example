@@ -1,0 +1,7 @@
+RewriteEngine On
+DirectoryIndex index.php
+Options +FollowSymLinks
+Require all granted
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

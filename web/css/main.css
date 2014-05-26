@@ -1,0 +1,7 @@
+div.block { background: #ffffff;  margin: 5px; padding: 5px; border: solid 1px black; }
+.column-left{ float: left; width: 380px; }
+.column-center{ display: inline-block; width: 540px; }
+.column-right{ float: right; width: 300px; }
+div.column-left label{ display: block; float: left; width: 150px; }
+h3 { margin: 5px;}
+div.column-right span { font-size: 11px; }
